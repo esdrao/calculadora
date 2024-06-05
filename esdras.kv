@@ -5,7 +5,7 @@
         spacing: 10
         canvas.before:
             Color:
-                rgba: 0.9, 0.9, 0.9, 1  # Fundo cinza claro
+                rgba: 1, 1, 0.5, 1  # Fundo cinza claro
             Rectangle:
                 pos: self.pos
                 size: self.size
@@ -35,104 +35,104 @@
             Button:
                 text: '7'
                 font_size: 40  # Aumentando o tamanho da fonte dos botões
-                background_color: 1, 1, 1, 1  # Cor branca para os botões
-                color: 0, 0, 0, 1  # Texto preto
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1  # Texto preto
                 on_press: root.add_to_expression('7')
 
             Button:
                 text: '8'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('8')
 
             Button:
                 text: '9'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('9')
 
             Button:
                 text: '+'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('+')
 
             Button:
                 text: '4'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('4')
 
             Button:
                 text: '5'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('5')
 
             Button:
                 text: '6'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('6')
 
             Button:
                 text: '-'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('-')
 
             Button:
                 text: '1'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('1')
 
             Button:
                 text: '2'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('2')
 
             Button:
                 text: '3'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('3')
 
             Button:
                 text: '/'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('/')
 
             Button:
                 text: 'C'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.clear_expression()
 
             Button:
                 text: '0'
                 font_size: 40
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
                 on_press: root.add_to_expression('0')
 
             Button:
                 text: '='
                 font_size: 50
-                background_color: 1, 1, 1, 1
-                color: 0, 0, 0, 1
+                background_color: 1, 0, 0, 1
+                color: 1, 1, 1, 1
                 on_press: root.calculate_result()
