@@ -110,12 +110,11 @@
                 on_press: root.add_to_expression('3')
 
             Button:
-                text: '/'
+                text: '÷'
                 font_size: 40
                 background_color: 0, 0, 0.5, 1
                 color: 1, 1, 1, 1
-                on_press: root.add_to_expression('/')
-
+                on_press: root.add_to_expression('÷')
             Button:
                 text: 'C'
                 font_size: 40
@@ -131,8 +130,18 @@
                 on_press: root.add_to_expression('0')
 
             Button:
+                text: '×'
+                font_size: 40
+                background_color: 0, 0, 0.5, 1
+                color: 1, 1, 1, 1
+                on_press: root.add_to_expression('×')
+
+            Button:
                 text: '='
                 font_size: 50
                 background_color: 1, 0, 0, 1
                 color: 1, 1, 1, 1
+                size_hint_y: 2  # Aumentando a altura do botão
                 on_press: root.calculate_result()
+                valign: 'middle'
+                halign: 'center'
