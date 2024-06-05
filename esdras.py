@@ -1,8 +1,5 @@
 from kivy.uix.filechooser import Screen
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
 from kivy.lang import Builder
 from kivy.core.window import Window
 
@@ -14,6 +11,10 @@ class CalculadoraLayout(Screen):
     def add_to_expression(self, value):
         display = self.ids.display
         display.text += value
+
+    def remover_char(self):
+        display = self.ids.display
+        display.text = display.text[:-1]
 
     def clear_expression(self):
         display = self.ids.display
